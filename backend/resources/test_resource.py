@@ -7,4 +7,7 @@ class TestResource(Resource):
     """
 
     def get(self, test_id):
-        return f'successfully tested API {test_id}'
+        return {
+            'success': True,
+            'message': f'successfully tested API {test_id}'
+        }, 200
