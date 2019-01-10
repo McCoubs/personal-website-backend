@@ -20,6 +20,7 @@ def create_app():
     # Routes
     api.add_resource(TestResource, '/test/<string:test_id>')
     api.add_resource(FindNthPrimeResource, '/find_nth_prime')
+    api.add_resource(SumSquareDifferenceResource, '/sum_square_difference')
 
     # Return the application instance.
     return app
