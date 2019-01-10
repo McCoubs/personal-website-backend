@@ -3,5 +3,3 @@ flask-restful==0.3.6
 requests>=2.20.0
 flask-cors
 gunicorn>=19.4.5
-import_from_github_com
--e git+https://github.com/McCoubs/project-euler@master#egg=project-euler
