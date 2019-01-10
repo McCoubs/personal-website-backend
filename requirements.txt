@@ -1,7 +1,7 @@
 flask==1.0.2
 flask-restful==0.3.6
-Flask-SQLAlchemy===2.2
-sqlalchemy==1.2.7
 requests>=2.20.0
 flask-cors
 gunicorn>=19.4.5
+import_from_github_com
+-e git+https://github.com/McCoubs/project-euler@master#egg=project-euler
