@@ -1,0 +1,3 @@
+[submodule "project_euler"]
+	path = project_euler
+	url = https://github.com/McCoubs/project_euler
