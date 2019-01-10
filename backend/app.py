@@ -18,7 +18,8 @@ def create_app():
     api = Api(app)
 
     # Routes
-    api.add_resource(TestResource, '/test', '/test/<string:test_id>')
+    api.add_resource(TestResource, '/test/<string:test_id>')
+    api.add_resource(FindNthPrimeResource, '/find_nth_prime/<int:nth_prime>')
 
     # Return the application instance.
     return app
