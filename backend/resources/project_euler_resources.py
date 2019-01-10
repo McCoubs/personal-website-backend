@@ -112,6 +112,8 @@ class PythagoreanTripletsResource(Resource):
         # process pythagorean triplets
         try:
             result = pythagorean_triplets(value)
+            if result is None:
+                result = {}
             output = {
                  'success': True,
                  'message': f'the product of the pythagorean triplets of {value} is: {result.get("abc")}',
