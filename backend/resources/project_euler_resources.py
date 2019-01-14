@@ -88,6 +88,8 @@ class LargestPrimeFactorResource(Resource):
         # process largest prime factor
         try:
             result = largest_prime_factor(value)
+            if result is None:
+                raise Exception('input value was less than the minimum of 2')
             output = {
                  'success': True,
                  'message': f'the largest prime factor of {value} is: {result}',
@@ -113,7 +115,7 @@ class PythagoreanTripletsResource(Resource):
         try:
             result = pythagorean_triplets(value)
             if result is None:
-                result = {}
+                raise Exception('Sorry the inputted number does not have a pythagorean triplet')
             output = {
                  'success': True,
                  'message': f'the product of the pythagorean triplets of {value} is: {result.get("abc")}',
