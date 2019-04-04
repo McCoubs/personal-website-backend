@@ -17,7 +17,7 @@ def create_app():
 
     api = Api(app)
 
-    api.add_resource(PingResource, '/ping')
+    api.add_resource(PingResource, '/wake-up-call')
     # project-euler routes
     api.add_resource(FindNthPrimeResource, '/find_nth_prime')
     api.add_resource(SumSquareDifferenceResource, '/sum_square_difference')
