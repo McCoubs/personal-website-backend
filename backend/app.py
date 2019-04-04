@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask
 from flask_restful import Api
 from flask_cors import CORS
 from backend.resources import *
@@ -17,6 +17,7 @@ def create_app():
 
     api = Api(app)
 
+    api.add_resource(PingResource, '/ping')
     # project-euler routes
     api.add_resource(FindNthPrimeResource, '/find_nth_prime')
     api.add_resource(SumSquareDifferenceResource, '/sum_square_difference')
